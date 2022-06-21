@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #333;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: min(3vmin, 1em);
+  min-height: 100vh;
+}
+
+.magnetic {
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 8rem;
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__bg {
+    position: absolute;
+
+    width: 6rem;
+    aspect-ratio: 1/1;
+
+    border-radius: 2rem;
+
+    background-color: #4ad0d0;
+    box-shadow: 0 3rem 10rem 0 rgba(#4ad0d0, 0.9);
+
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &__element {
+
+    width:  3rem;
+    aspect-ratio: 1/1;
+
+    pointer-events: none;
+    z-index: 2;
+
+    img {
+      height: 100%;
+      vertical-align: bottom;
+    }
+  }
+}
