@@ -42,8 +42,8 @@ body {
   width: 6rem;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  background-color: #4ad0d0;
-  box-shadow: 0 3rem 10rem 0 rgba(74, 208, 208, 0.9);
+  background-color: #e33535;
+  box-shadow: 0 3rem 10rem 0 rgba(227, 53, 53, 0.9);
   pointer-events: none;
   z-index: 1;
 }
